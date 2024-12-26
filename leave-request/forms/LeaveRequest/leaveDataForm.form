@@ -1,0 +1,70 @@
+{
+    "id": "leavedataform",
+    "schemaVersion": "1.1.0",
+    "name": "leaveDataForm",
+    "revision": "1.0",
+    "type": "task",
+    "readOnly": true,
+    "content": [
+        {
+            "id": "leave_data_filled_by",
+            "type": "section",
+            "title": "leave data filled by",
+            "content": [
+                {
+                    "id": "employee_id",
+                    "type": "string",
+                    "label": "Employee ID",
+                    "readOnly": false,
+                    "value": "${context.empId}",
+                    "constraints": {
+                        "required": false
+                    }
+                },
+                {
+                    "id": "start_date",
+                    "type": "string",
+                    "label": "Start Date",
+                    "readOnly": false,
+                    "value": "${context.startDate}",
+                    "constraints": {
+                        "required": false
+                    }
+                },
+                {
+                    "id": "reason",
+                    "type": "string",
+                    "label": "Reason",
+                    "readOnly": false,
+                    "value": "${context.reason}",
+                    "constraints": {
+                        "required": false
+                    }
+                },
+                {
+                    "id": "number_of_days",
+                    "type": "integer",
+                    "label": "Number of Days",
+                    "readOnly": false,
+                    "value": "${context.numberofDays}",
+                    "constraints": {
+                        "required": false
+                    }
+                }
+            ]
+        }
+    ],
+    "decisions": [
+        {
+            "id": "approve",
+            "text": "approve",
+            "decisionType": "positive"
+        },
+        {
+            "id": "reject",
+            "text": "reject",
+            "decisionType": ""
+        }
+    ],
+    "attachments": {}
+}
