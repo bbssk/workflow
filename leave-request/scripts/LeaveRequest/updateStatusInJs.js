@@ -26,8 +26,8 @@ $.context.product = product;
 */
 var userTaskStatus  =$.usertasks.usertask1.last;
 //$.context.status = status.decision
-if(userTaskStatus .decision==="approve"){
-	$.context.status="approved raaa";
+if(userTaskStatus .decision==="approve"){//approve is ID in form decision section
+	$.context.status="approved raaa";//status is new prop
 }else{
 	$.context.status="rejected raa";
 }
